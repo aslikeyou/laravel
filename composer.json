@@ -6,7 +6,11 @@
     "type": "project",
     "require": {
         "php": ">=5.6.4",
-        "laravel/framework": "5.3.*"
+        "guzzlehttp/guzzle": "^6.2",
+        "laravel/framework": "5.3.*",
+        "laravel/passport": "^1.0",
+        "pdffiller/php-pinba-profiler": "^1.0",
+        "wensleydale/keen-io-laravel": "^1.0"
     },
     "require-dev": {
         "fzaninotto/faker": "~1.4",
@@ -47,5 +51,11 @@
     "config": {
         "preferred-install": "dist",
         "sort-packages": true
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url":  "https://github.com/pdffiller/php-pinba-profiler.git"
+        }
+    ]
 }
